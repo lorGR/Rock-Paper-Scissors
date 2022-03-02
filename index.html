@@ -6,21 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="dist/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700;900&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <h1>Rock Paper Scissors</h1>
-    <div>
-        <img src="Images/Rock.png" alt="rock" id="rock" name="rock">
-        <!-- <button class="--choice rock" id="rock" name="rock">
-        </button> -->
-        <img src="Images/Paper.png" alt="paper" id="paper" name="paper">
-        <!-- <button class="--choice paper" id="paper" name="paper">
-        </button> -->
-        <img src="Images/Scissors.png" alt="scissors" id="scissors" name="scissors">
-        <!-- <button class="--choice scissors" id="scissors" name="scissors">
-        </button> -->
+    <span>Pick Your Choice</span>
+    <div class="user-choice">
+        <img class="--choice" src="Images/Rock.png" alt="rock" id="rock" name="rock">
+        <img class="--choice" src="Images/Paper.png" alt="paper" id="paper" name="paper">
+        <img class="--choice" src="Images/Scissors.png" alt="scissors" id="scissors" name="scissors">
     </div>
-
+    <div class="game">
+        <p class="countdown" id="countdownTimer">Waiting for user pick</p>
+        <img class="user-display-out" id="userDisplay" src="" alt="">
+        <img class="comp-display-out" id="compDisplay" src="" alt="">
+    </div>
+    <div class="score-kepper">
+        <P>USER <span id="userScore">0</span>:<span id="compScore">0</span> COMP</P>
+    </div>
     <script src="dist/app.js"></script>
 </body>
 </html>

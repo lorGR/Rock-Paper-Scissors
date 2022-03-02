@@ -1,4 +1,48 @@
-button {
-  border: none;
-  border-radius: 90em;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+body .user-choice {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+body .game .countdown {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 100;
+}
+body .game .user-display-out {
+  transform: translateX(-200%);
+}
+body .game .user-display-in {
+  transform: translateX(0%);
+}
+body .game .comp-display-out {
+  transform: translate(200%);
+}
+body .game .comp-display-in {
+  transform: translate(0%);
+}
+body .game img {
+  transition: all 0.5s ease-in-out;
+  width: 7em;
+}
+
+.--choice {
+  width: 5em;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.--choice:hover {
+  opacity: 0.7;
+  transform: scale(1.2);
+}
+
+.hidden {
+  display: none;
 }

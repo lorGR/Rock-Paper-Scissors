@@ -1,5 +1,52 @@
-button{
-    border: none;
-    border-radius: 90em;
+*{
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    .user-choice{
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+    }
+    .game{
+        .countdown{
+            text-transform: uppercase;
+            font-size: 4rem;
+            font-weight: 100;
+        }
+        .user-display-out{
+            transform: translateX(-200%);
+        }
+        .user-display-in{
+            transform: translateX(0%);
+        }
+        .comp-display-out{
+            transform: translate(200%);
+        }
+        .comp-display-in{
+            transform: translate(0%);
+        }
+        img{
+            transition: all .5s ease-in-out;
+            width: 7em;
+        }
+    }
+}
+
+
+.--choice{
+    width: 5em;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    &:hover{
+        opacity: .7;
+        transform: scale(1.2);
+    }
+}
+
+.hidden{
+    display: none;
 }
 
