@@ -11,6 +11,9 @@ body .user-choice {
   justify-content: center;
   gap: 2em;
 }
+body .game {
+  border: 1px solid blue;
+}
 body .game .countdown {
   text-transform: uppercase;
   font-size: 4rem;
@@ -31,6 +34,12 @@ body .game .comp-display-in {
 body .game img {
   transition: all 0.5s ease-in-out;
   width: 7em;
+}
+body .score-keeper {
+  border: 1px solid red;
+}
+body .score-keeper p {
+  font-size: 1.5rem;
 }
 
 .--choice {
